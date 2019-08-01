@@ -1,3 +1,3 @@
 class ProjectStatus < ApplicationRecord
-    #belongs_to :project
+    has_many :project
 end

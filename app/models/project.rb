@@ -1,3 +1,3 @@
 class Project < ApplicationRecord
-    has_one :project_status
+    belongs_to :project_status
 end
