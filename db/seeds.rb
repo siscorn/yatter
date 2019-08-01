@@ -5,3 +5,49 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+ProjectStatus.create!(
+    [
+        {
+            name: '実行中',
+        },
+        {
+            name: '成功',
+        },
+        {
+            name: '失敗',
+        }
+    ]
+)
+
+
+Project.create!(
+    [
+        {
+            owner: 'murakami',
+            title: 'yatterを作る',
+            project_status_id: 1,
+            cheered_count: 3
+        },
+        {
+            owner: 'sudame',
+            title: '筑波大学を受験する',
+            project_status_id: 3,
+            cheered_count: 0
+        },
+        {
+            owner: 'iwanami',
+            title: '趣味の話をする',
+            project_status_id: 2,
+            cheered_count: 100
+        },
+        {
+            owner: 'sou',
+            title: '着手報告会成功したい',
+            project_status_id: 1,
+            cheered_count: 100000000
+        }
+    ]
+)
+
+
