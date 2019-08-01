@@ -1,0 +1,9 @@
+<%= form_for(@project, :url => {:action=>:create}) do |f|%>
+  <%= f.label :owner %>
+  <%= f.text_field :owner %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.submit "登録する"%>
+<% end %>
