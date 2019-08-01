@@ -1,5 +1,5 @@
 # README
-
+# This application is for those who want to share their success without hesitation!
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
