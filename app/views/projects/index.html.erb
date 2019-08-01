@@ -3,6 +3,20 @@
 
 <% @projects.each do |project| %>
   <div>
-    <%= project.title %>
+    ステータス: <%= project.project_status.name %>
   </div>
+  <div>
+    ニックネーム: <%= project.owner %>
+  </div>
+  <div>
+    プロジェクト名: <%= project.title %>
+  </div>
+  <div>
+    応援数: <%= project.cheered_count %>
+  </div>
+  <div>
+    作成日: <%= project.created_at %>
+  </div>
+  <hr>
+
 <% end %>
